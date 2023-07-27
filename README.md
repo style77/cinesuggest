@@ -1,33 +1,27 @@
-This is a [Plasmo extension](https://docs.plasmo.com/) project bootstrapped with [`plasmo init`](https://www.npmjs.com/package/plasmo).
+# CineSuggest
 
-## Getting Started
+CineSuggest is chrome extension made with [Plasmo](https://www.plasmo.com/) framework. It suggests movies based on movies you watched and liked. It uses [The Movie Database](https://www.themoviedb.org/) API to fetch movies.
 
-First, run the development server:
+## Installation
 
-```bash
-pnpm dev
-# or
-npm run dev
-```
+1. Clone the repository
+2. Open chrome and go to `chrome://extensions/`
+3. Enable developer mode
+4. Set all the environment variables in `.env` file
+5. Run `yarn dev`
+6. Click on `Load unpacked` and select the `build/chrome-mv3-dev` folder
+7. You are good to go!
 
-Open your browser and load the appropriate development build. For example, if you are developing for the chrome browser, using manifest v3, use: `build/chrome-mv3-dev`.
+## Usage
 
-You can start editing the popup by modifying `popup.tsx`. It should auto-update as you make changes. To add an options page, simply add a `options.tsx` file to the root of the project, with a react component default exported. Likewise to add a content page, add a `content.ts` file to the root of the project, importing some module and do some logic, then reload the extension on your browser.
+1. Click on the extension icon
+2. Hover over instruction card
+3. Type the name of the movie you watched and liked and click corresponding card to select it
 
-For further guidance, [visit our Documentation](https://docs.plasmo.com/)
+## Contributing
 
-## Making production build
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Run the following:
+## License
 
-```bash
-pnpm build
-# or
-npm run build
-```
-
-This should create a production bundle for your extension, ready to be zipped and published to the stores.
-
-## Submit to the webstores
-
-The easiest way to deploy your Plasmo extension is to use the built-in [bpp](https://bpp.browser.market) GitHub action. Prior to using this action however, make sure to build your extension and upload the first version to the store to establish the basic credentials. Then, simply follow [this setup instruction](https://docs.plasmo.com/framework/workflows/submit) and you should be on your way for automated submission!
+This project is licensed under [MIT](https://choosealicense.com/licenses/mit/) license.
